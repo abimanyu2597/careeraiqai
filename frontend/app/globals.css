@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(59,130,246,.18), transparent 35%),
+    radial-gradient(circle at 85% 10%, rgba(139,92,246,.15), transparent 30%),
+    linear-gradient(180deg, #060816 0%, #081122 100%);
+  color: #e5eefc;
+}
+
+body {
+  @apply antialiased;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(96,165,250,.5) transparent;
+}
+
+.glass {
+  background: rgba(10, 18, 39, 0.75);
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(14px);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 90%);
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-semibold tracking-tight text-white;
+}
+
+.muted {
+  @apply text-slate-300/80;
+}
+
+.card-title {
+  @apply text-lg font-semibold text-white;
+}
+
+input, textarea {
+  @apply outline-none;
+}
+
+textarea {
+  resize: vertical;
+}
