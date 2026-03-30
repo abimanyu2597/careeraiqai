@@ -19,3 +19,9 @@ dist/
 
 # uploads
 backend/uploads/
+
+backend/
+*.py
+.env
+.venv/
+__pycache__/
